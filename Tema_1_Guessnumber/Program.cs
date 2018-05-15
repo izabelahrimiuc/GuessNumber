@@ -11,25 +11,25 @@ namespace Tema_1_Guessnumber
         static void Main(string[] args)
         {
             Random rng = new Random();
-            int RandomValue = rng.Next(1, 100);
-            Console.WriteLine(RandomValue);
-            int nr = 0;
+            int randomValue = rng.Next(1, 100);
+            Console.WriteLine(randomValue);
+            int guess = 0;
 
             do
             {
                 Console.WriteLine("Please enter a number");
                 string str = Console.ReadLine();
-                nr = int.Parse(str);
+                guess = int.Parse(str);
 
-                if (nr > RandomValue)
+                if (guess > randomValue)
                 {
                     Console.WriteLine("The number is greater than the target number");
                 }
-                else if (nr < RandomValue)
+                else if (guess < randomValue)
                 {
                     Console.WriteLine("The number is not greater than the target number");
                 }
-            } while (nr != RandomValue);
+            } while (guess != randomValue);
 
             Console.WriteLine("You guessed the number!");
         }
