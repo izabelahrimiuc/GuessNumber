@@ -12,7 +12,6 @@ namespace Tema_1_Guessnumber
         {
             Random rng = new Random();
             int randomValue = rng.Next(1, 100);
-            Console.WriteLine(randomValue);
             int guess = 0;
 
             do
@@ -23,11 +22,11 @@ namespace Tema_1_Guessnumber
 
                 if (guess > randomValue)
                 {
-                    Console.WriteLine("The number is greater than the target number");
+                    Console.WriteLine($"The number {guess} is greater than the target number");
                 }
                 else if (guess < randomValue)
                 {
-                    Console.WriteLine("The number is not greater than the target number");
+                    Console.WriteLine($"The number {guess} is smaller than the target number");
                 }
             } while (guess != randomValue);
 
