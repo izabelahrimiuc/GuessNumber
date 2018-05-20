@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tema_1_Guessnumber
+namespace Guessnumber
 {
     class Program
     {
