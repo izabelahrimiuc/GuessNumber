@@ -78,7 +78,7 @@ namespace Homework01DateTime
             } 
             else
             {
-                Console.WriteLine("lease enter a valid gender:");
+                Console.WriteLine("Please enter a valid gender:");
             }     
         }
     }
