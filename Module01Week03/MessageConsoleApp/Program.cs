@@ -5,17 +5,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MessageLibrary;
-using static MessageLibrary.Person;
 
 namespace MessageConsoleApp
 {
     class Program
     {
+        //punct de pornire in aplicatie
         static void Main(string[] args)
         {
-            User designer = new Person("Rares","Pop",new DateTime(1992,07,18));
+            UsersList usersList = new UsersList();
+            User newUser = usersList.CreateAccount();
 
-            Author author = new Author(5, "Ana", "Rusu", new DateTime(1991,05,1));
+            PostsList postsList = new PostsList();
+
+            int option;
+            do
+            {
+                Console.WriteLine("What do you want to do?");
+                Console.WriteLine("0 - Exit");
+                Console.WriteLine("1 - Create posts");
+                Console.WriteLine("2 - Display posts");
+                int.TryParse(Console.ReadLine(), out option);
+
+                switch (option)
+                {
+                    case 0:
+                        break;
+                    case 1:
+                        Post newPost = postsList.CreatePost(newUser);
+                        break;
+                    case 2:
+                        postsList.DisplayPosts();
+                        break;
+                    default:
+                        break;
+                }
+            } while (option != 0);
         }
     }
 }
