@@ -64,7 +64,7 @@ namespace MessageLibrary
 
 
 
-            User user = new User(UserCount, "", "Iza", "Hrimiuc", new DateTime(2000, 1, 1), Gender.Female, "");
+            User user = new User(UserCount,"Iza", "Hrm", new DateTime(2000, 1, 1), Gender.Female, ""," ");
             Users.Add(user);
             UserCount++;
 

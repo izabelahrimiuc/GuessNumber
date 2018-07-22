@@ -46,7 +46,6 @@ namespace MessageLibrary
                         post.TimeOfPosting.ToString(),
                         post.Author.FirstName,
                         post.Author.LastName));
-
                 }
             }
         }

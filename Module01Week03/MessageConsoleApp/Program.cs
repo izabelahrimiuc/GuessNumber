@@ -10,7 +10,6 @@ namespace MessageConsoleApp
 {
     class Program
     {
-        //punct de pornire in aplicatie
         static void Main(string[] args)
         {
             UsersList usersList = new UsersList();
